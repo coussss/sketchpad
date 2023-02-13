@@ -1,11 +1,28 @@
-#gridContainer {
+.gridContainer {
     display: grid;
     width: 600px;
     height: 600px;
+    border: 2px solid red;
+    margin: 20px;
 
 }
 
 .box {
-    border: 1px solid red;
     box-sizing: content-box;
+}
+
+.error {
+    font-size: 36px;
+}
+
+.gridContainer2 {
+    display: flex;
+    width: 600px;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggleLines {
+    border: 1px solid black;
 }

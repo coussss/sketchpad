@@ -5,9 +5,14 @@
         <title>Etch-A-Sketch!</title>
     </head>
     <body>
-        <input type="text" placeholder="Enter grid size" value="16">
+        <h1>Etch-A-Sketch!</h1>
+        <input type="text" placeholder="Enter grid size" onchange="changeSize(this.value)">
         <button id="changeGrid">Grid size</button>
-        <div id="gridContainer">
+        <button onclick="toggleLines()">Toggle Lines</button>
+        <div class="gridContainer">
+        </div>
+        <div class="buttons">
+            <button id="grey">Grey</button>
         </div>
     </body>
     <script type="text/javascript" src="./script.js"></script>
