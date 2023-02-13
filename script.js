@@ -42,6 +42,10 @@ function changeSize(input) {
 function colourSquare() {
     this.style.backgroundColor = color;
 }
+
+function changeColor(choice) {
+    color = choice;
+}
  
 function toggleLines() {
     let container = document.querySelector('.gridContainer');

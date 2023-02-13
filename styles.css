@@ -2,7 +2,6 @@
     display: grid;
     width: 600px;
     height: 600px;
-    border: 2px solid red;
     margin: 20px;
 
 }
@@ -26,4 +25,47 @@
 .toggleLines {
     border: 1px solid rgba(0, 0, 0, .25);
     
+}
+
+.buttons {
+    display: grid;
+    height: 40px;
+    width: 400px;
+    grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 
+}
+
+.colorButton {
+    border: none;
+    box-sizing: content-box;    
+}
+
+#redButton {
+    background-color: red;
+}
+#orangeButton {
+    background-color: orange;
+}
+#yellowButton {
+    background-color: yellow;
+}
+#greenButton {
+    background-color: green;
+}
+#blueButton {
+    background-color: blue;
+}
+#pinkButton {
+    background-color: pink;
+}
+#purpleButton {
+    background-color: purple;
+}
+#blackButton {
+    background-color: black;
+}
+#grayButton {
+    background-color: gray;
+}
+#whiteButton {
+    background-color: white;
 }
