@@ -2,12 +2,14 @@
     display: grid;
     width: 600px;
     height: 600px;
-    margin: 20px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px grey;
 
 }
 
 .box {
     box-sizing: content-box;
+    background-color: white;
 }
 
 .error {
@@ -16,6 +18,8 @@
 
 .gridContainer2 {
     display: flex;
+    margin-top: 20px;
+    background-color: white;
     width: 600px;
     height: 600px;
     justify-content: center;
@@ -31,12 +35,12 @@
     display: grid;
     height: 40px;
     width: 400px;
-    grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 
+    grid-template-columns: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
 }
 
 .colorButton {
     border: none;
-    box-sizing: content-box;    
+    box-sizing: content-box; 
 }
 
 #redButton {
@@ -68,4 +72,35 @@
 }
 #whiteButton {
     background-color: white;
+}
+
+#mainContainer {
+    width: 600px;
+    margin: auto;
+} 
+
+body {
+    background: rgb(227, 252, 255)
+}
+
+#buttonsContainer {
+    display: flex;
+    margin-top: 20px;
+}
+
+#clearGrid {
+    margin-left: 50px;
+    border-radius: 20px;
+    width: 100px;
+    background-color: white;
+    border: 2px solid rgb(255, 170, 220);
+    color: rgb(255, 170, 220);
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#clearGrid:hover {
+    background-color: rgb(255, 170, 220);
+    color: white;
 }

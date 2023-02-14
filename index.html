@@ -5,23 +5,28 @@
         <title>Etch-A-Sketch!</title>
     </head>
     <body>
-        <h1>Etch-A-Sketch!</h1>
-        <input type="text" placeholder="Enter grid size" onchange="changeSize(this.value)">
-        <button id="changeGrid">Grid size</button>
-        <button onclick="toggleLines()">Toggle Lines</button>
-        <div class="gridContainer">
-        </div>
-        <div class="buttons">
-            <button id="redButton" class="colorButton" onclick="changeColor('red')"></button>
-            <button id="orangeButton" class="colorButton" onclick="changeColor('orange')"></button>
-            <button id="yellowButton" class="colorButton" onclick="changeColor('yellow')"></button>
-            <button id="greenButton" class="colorButton" onclick="changeColor('green')"></button>
-            <button id="blueButton" class="colorButton" onclick="changeColor('blue')"></button>
-            <button id="pinkButton" class="colorButton" onclick="changeColor('pink')"></button>
-            <button id="purpleButton" class="colorButton" onclick="changeColor('purple')"></button>
-            <button id="blackButton" class="colorButton" onclick="changeColor('black')"></button>
-            <button id="grayButton" class="colorButton" onclick="changeColor('gray')"></button>
-            <button id="whiteButton" class="colorButton" onclick="changeColor('white')"></button>
+        <div id="mainContainer">
+            <h1>Etch-A-Sketch!</h1>
+            <input type="text" placeholder="Enter grid size" onchange="changeSize(this.value)">
+            <button id="changeGrid">Grid size</button>
+            <button onclick="toggleLines()">Toggle Lines</button>
+            <div class="gridContainer">
+            </div>
+            <div id="buttonsContainer">
+                <div class="buttons">
+                    <button id="redButton" class="colorButton" onclick="changeColor('red')"></button>
+                    <button id="orangeButton" class="colorButton" onclick="changeColor('orange')"></button>
+                    <button id="yellowButton" class="colorButton" onclick="changeColor('yellow')"></button>
+                    <button id="greenButton" class="colorButton" onclick="changeColor('green')"></button>
+                    <button id="blueButton" class="colorButton" onclick="changeColor('blue')"></button>
+                    <button id="pinkButton" class="colorButton" onclick="changeColor('pink')"></button>
+                    <button id="purpleButton" class="colorButton" onclick="changeColor('purple')"></button>
+                    <button id="blackButton" class="colorButton" onclick="changeColor('black')"></button>
+                    <button id="grayButton" class="colorButton" onclick="changeColor('gray')"></button>
+                    <button id="whiteButton" class="colorButton" onclick="changeColor('white')"></button>
+                </div>
+                <button id="clearGrid" onclick="clearGrid()">Clear grid</button>
+            </div>
         </div>
     </body>
     <script type="text/javascript" src="./script.js"></script>

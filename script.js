@@ -1,4 +1,5 @@
 let color = "black";
+let click = false;
 
 populateGrid(16);
 
@@ -18,7 +19,7 @@ function populateGrid(size) {
 }
 
 function changeSize(input) {
-    if (input <= 100) {
+    if (input <= 100 && input >= 2) {
         populateGrid(input)
     } else {
         const container = document.querySelector('.gridContainer'); 
@@ -27,7 +28,7 @@ function changeSize(input) {
         container.classList.replace('gridContainer', 'gridContainer2');
         const error = document.createElement('div');
         error.classList.add('error');
-        error.textContent = "Error! Invalid grid size!";
+        error.textContent = "Enter value between 2-100";
         container.appendChild(error)
         setTimeout(function(){
             const container2 = document.querySelector('.gridContainer2');
@@ -40,7 +41,9 @@ function changeSize(input) {
 }
 
 function colourSquare() {
-    this.style.backgroundColor = color;
+    if (click === true) {
+        this.style.backgroundColor = color;
+    }
 }
 
 function changeColor(choice) {
@@ -52,3 +55,13 @@ function toggleLines() {
     let lines = container.querySelectorAll('div');
     lines.forEach((div) => div.classList.toggle("toggleLines"));
 }
+
+function clearGrid() {
+    let container = document.querySelector('.gridContainer');
+    let whiteSquares = container.querySelectorAll('div');
+    whiteSquares.forEach((div) => div.style.backgroundColor = "white");
+}
+
+document.querySelector('.gridContainer').addEventListener("click", () => {
+    click = !click
+});
